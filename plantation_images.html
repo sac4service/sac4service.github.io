@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<!-- Title -->
+    <title>SAC-Plantation</title>
+	
+  </head>
+  <body>
+
+	<div style="font-family:algerian; color:navy; text-align:center">
+		<h1>SURYODAYA SOCIETY FOR AWAKENING COMMUNITY</h1>
+		<h2>Plantation</h2>	
+	</div>
+	<h2 style="text-align:center">Plantation on 29-07-2018</h2>
+	<!-- MAP -->
+	<div class="row no-gutters">
+	  <div class="col-md-8">
+	    <div id="map" style="height: 500px; margin-right:20px; margin-left:20px;">
+		</div>
+		<script type="text/javascript">
+			var locations = [
+			  ['Plant1<br/><a href="#plant1"><h5>Images of plant1</h5></a>', 15.901474,80.455442],
+			  ['Plant16', 15.902276,80.455436],
+			  ['Plant15', 15.902260,80.455408],
+			  ['Plant17', 15.902351,80.455770],
+			  ['Plant18', 15.902405,80.455922],
+			  ['Plant6', 15.901856,80.455216],
+			  ['Plant5', 15.901774,80.455294],
+			  ['Plant9', 15.901913,80.455287],
+			  ['Plant3<br/><a href="#plant3">Images of plant3</a>', 15.901577,80.455380],
+			  ['Plant12', 15.902042,80.45555],
+			  ['Plant11', 15.901942,80.455342],
+			  ['Plant2<br/><a href="#plant2">Images of plant2</a>', 15.901505,80.455435],
+			  ['Plant7', 15.901891,80.455255],
+			  ['Plant19', 15.902447,80.455791],
+			  ['Plant10', 15.901933,80.455351],
+			  ['Plant14', 15.902203,80.455590],
+			  ['Plant8', 15.901892,80.455277],
+			  ['Plant4', 15.901669,80.455389],
+			  ['Plant20', 15.902448,80.455793],
+			  ['Plant13', 15.902090,80.455673]
+			  
+			];
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  zoom: 19.2,
+			  center: new google.maps.LatLng(15.902, 80.4555),
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			});
+
+			var infowindow = new google.maps.InfoWindow();
+
+			var marker, i;
+
+			for (i = 0; i < locations.length; i++) { 
+			  marker = new google.maps.Marker({
+				position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+				map: map
+			  });
+
+			  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+				return function() {
+				  infowindow.setContent(locations[i][0]);
+				  infowindow.open(map, marker);
+				}
+			  })(marker, i));
+			}
+		</script>
+	  
+	  </div>
+	  <div class="col-md-4">
+		<h3>William Booth College in Bapatla</h3>
+		<h5>Volunteers are:-</h5>
+		<ul>
+			<li>Maram Akhil Reddy---3/4 CSE</li>
+			<li>K.Kumar---2/4 EEE</li>
+			<li>V.Srikanth---2/4 EEE</li>
+			<li>S.S.V.Vijay Kumar---2/4 EEE</li>
+			<li>R.L.S. Mani Kanta---2/4 CSE</li>
+			<li>Ayyappa---2/4 CSE</li>
+			<li>Md.Hayath---2/4 CSE</li>
+			<li>Sai Sravan---2/4 Civil</li>
+			<li>Raju Naik---2/4 Civil</li>
+		</ul>
+		<b>Total No of Plants Planted:-20</b>
+	  </div>
+	</div>
+	<div id="plant1">
+		<h4>Plant1</h4>
+		<img src="1.jpg" style="width:600px; height:400px;">
+		<img src="1.jpg" style="width:600px; height:400px;">
+	</div>
+	<div id="plant2">
+		<h4>Plant2</h4>
+		<img src="1.jpg" style="width:600px; height:400px;">
+		<img src="1.jpg" style="width:600px; height:400px;">
+	</div>
+	<div id="plant3">
+		<h4>Plant3</h4>
+		<img src="1.jpg" style="width:600px; height:400px;">
+		<img src="1.jpg" style="width:600px; height:400px;">
+	</div>
+	
+  </body>
+</html>

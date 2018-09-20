@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SAC-Gallery</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+        <link rel="stylesheet" href="css/style.css">
+		
+		<style>
+        .gallery-block.grid-gallery{
+			padding-bottom: 60px;
+			padding-top: 60px;
+		}
+
+.gallery-block.grid-gallery .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block.grid-gallery .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.grid-gallery a:hover{
+  opacity: 0.8;
+}
+
+.gallery-block.grid-gallery .item img{
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+}
+
+.gallery-block.grid-gallery .item{
+  margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+
+  .gallery-block.grid-gallery .scale-on-hover:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+  }
+}
+</style>
+    </head>
+    <body>
+	<nav aria-label="breadcrumb" class="fixed-top" style="padding-top:56px;">
+	  <ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Gallery</li>
+	  </ol>
+	</nav>
+	
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+	  <a class="navbar-brand" href="index.html"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">
+			  About SAC
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			  <a class="dropdown-item" href="origin_of_sac.html">Origin Of SAC</a>
+			  <a class="dropdown-item" href="our_teams.html">Our Teams</a>
+			  <a class="dropdown-item" href="our_moto.html">Our Motto</a>
+			  <a class="dropdown-item" href="our_strength.html">Our Strengths</a>
+			  <a class="dropdown-item" href="yearly_updates.html">Yearly Updates</a>
+			  <a class="dropdown-item" href="achievements.html">Achievements</a>
+			  <a class="dropdown-item" href="elders_desk.html">Elders Desk</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">
+			  SAC Programs
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			  <a class="dropdown-item" href="construction.html">Hostel Construction Work</a>
+			  <a class="dropdown-item" href="blood.html">Blood Donation Program</a>
+			  <a class="dropdown-item" href="plantation.html">Plantation and Swach Bharath Program</a>
+			  <a class="dropdown-item" href="village_programs.html">Village Program</a>
+			  <a class="dropdown-item" href="events.html">Events and Cultural programs</a>
+			  <a class="dropdown-item" href="otherworks.html">Other Works</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">
+			  Volunteers
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			  <a class="dropdown-item" href="#">Post an Update</a>
+			  <a class="dropdown-item" href="#">Discussion Forum</a>
+			  <a class="dropdown-item" href="#">Nominate YourSelf(be a leader)</a>
+			  <a class="dropdown-item" href="#">Download/Request Stuff</a>
+			  <a class="dropdown-item" href="#">Request For Blood</a>
+			  <a class="dropdown-item" href="#">Meeting Minutes</a>
+			  <a class="dropdown-item" href="#">My Profile</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">
+			  Alumini
+			</a>
+			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+			  <a class="dropdown-item" href="#">Nominate Yourself for Visit</a>
+			  <a class="dropdown-item" href="#">Post Your Experience and Feedback</a>
+			  <a class="dropdown-item" href="#">My Profile And Requests</a>
+			</div>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="gallery.html">Gallery</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contact_us.html">Contact Us</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	
+        <div class="container-fluid" style="padding-top:112px;">
+			<h1 style="text-align:center;color:navy;font-family:castellar">GALLERY</h1>
+		</div>
+		<section class="gallery-block grid-gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-2 item">
+                        <a class="lightbox" href="images/1.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/1.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 item">
+                        <a class="lightbox" href="images/2.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/2.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 item">
+                        <a class="lightbox" href="images/3.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/3.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 item">
+                        <a class="lightbox" href="images/4.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/4.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 item">
+                        <a class="lightbox" href="images/5.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/5.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 item">
+                        <a class="lightbox" href="images/6.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/6.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="images/7.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/7.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="images/8.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/8.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="images/9.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/9.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script>
+            baguetteBox.run('.grid-gallery', { animation: 'slideIn'});
+        </script>
+    </body>
+</html>
