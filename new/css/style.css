@@ -48,31 +48,3 @@
 			background-color:#CCD1D1;
 			padding: 1px;
 		}
-		
-		/* for facebook logo */
-		
-		.fb-col{
-	    	color:blue;
-			font-size:40px;
-		}
-		
-		/* for twitter logo */
-		
-		.twit-col{
-			color:#41d9f4;
-			font-size:40px;
-		}
-		
-		/* for instragram logo */
-		
-		.insta-col{
-			color:#f442a1;
-			font-size:40px;
-		}
-		
-		/* for link logo */
-		
-		.link-col{
-			color:#417cf4;
-			font-size:40px;
-		}
