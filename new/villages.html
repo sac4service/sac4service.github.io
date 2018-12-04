@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,21 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-	
-    <title>Suryodaya Society For Awakening Community</title>
+    <title>Villages-Suryodaya Society For Awakening Community</title>
 	<link rel="shortcut icon" href="images/logo.jpg"/>
-	
-	<style>
-		.card-body{
-			height:200px;
-		}
-		.card-header
-		{
-			background-color:light;
-			text-align:center;
-			
-		}
-	</style>
   </head>
   <body>
     <!-- Optional JavaScript -->
@@ -30,6 +18,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var shiftWindow = function() { scrollBy(0, -112) };
+		if (location.hash) shiftWindow();
+		window.addEventListener("hashchange", shiftWindow);
+	</script>
+	
+	<nav aria-label="breadcrumb" class="fixed-top" style="padding-top:56px;">
+	  <ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Villages</li>
+	  </ol>
+	</nav>
 	
 	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 	  <a class="navbar-brand" href="index.html"></a>
@@ -38,8 +38,8 @@
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 		<ul class="navbar-nav ml-auto">
-		  <li class="nav-item active">
-			<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Home</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="about.html">About Us</a>
@@ -47,21 +47,19 @@
 		  <li class="nav-item">
 			<a class="nav-link" href="events.html">Events</a>
 		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="villages.html">Villages</a>
+		  <li class="nav-item active">
+			<a class="nav-link" href="villages.html">Villages
+			<span class="sr-only">(current)</span></a>
 		  </li>
-		  <li class="nav-item dropdown">
+		  <li class="nav-item dropdown ">
 			<a class="nav-link dropdown-toggle" href="updates.html" id="navbarDropdownMenuLink">
-			  Updates
+			  Updates 
 			</a>
 			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 			  <a class="dropdown-item" href="latest_updates.html">Latest Updates</a>
 			  <a class="dropdown-item" href="yearly_updates.html">Yearly Updates</a>
 			</div>
 		  </li>
-		  <!--li class="nav-item">
-			<a class="nav-link" href="contact.html">News Room</a>
-		  </li-->
 		  <li class="nav-item">
 			<a class="nav-link" href="contact.html">Contact Us</a>
 		  </li>
@@ -69,14 +67,12 @@
 	  </div>
 	</nav>
 	
-	<div style="padding-top:56px;/*background-image: linear-gradient(white,lime);*/">
-		<center><h1 style="font-family:algerian; color:navy;">Suryodaya Society For Awakening Community</h1></center>
-		<p class="float-right">~Helping Hands are Better than Praying Lips</p>
-	</div>
-	<!--img src="images/test.jpg" class="img-fluid" alt="Responsive image"-->
-	<marquee><img src="new.gif" width="30" height="14" border="0" alt="" scrolldelay="80"><font size="3" color="red"><b> *** <a href="events.html">Events page </a>and <a href="villages.html">Villages page </a>are added.***</b></font></marquee>
-	
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<div class="container-fluid" style="padding-top:112px;">
+		<h1 style="text-align:center;color:navy;font-family:castellar">VILLAGES</h1>
+		
+		<marquee><img src="new.gif" width="30" height="14" border="0" alt="" scrolldelay="80"><a href="latest_updates.html"><font size="3" color="red"><b> *** Latest updates are here ***</b></font></a></marquee>
+		
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 	  <ol class="carousel-indicators">
 		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -114,80 +110,78 @@
 		<span class="sr-only">Next</span>
 	  </a>
 	</div>
-	
-	<!-- Update -->
-	<div class="row no-gutters">
-	  <div class="col-lg-6">
-		<!--div class="jumbotron jumbotron-fluid"-->
-		  <div class="container">
-			<h1 class="display-6">About SAC</h1>
-			<p><span class="align-middle">SAC is a formal committee of students formed at Bapatla Engineering college with a motto ‘NO CHILD WORKING, EVERY CHILD IN SCHOOL & LEARNING WELL’ established by N.Venu Gopala Rao on 3rd march 2008.<br> 
-			It was officially registered as a social welfare organization.0n June 3rd 2011(Regd No: 171 0f 2011 at Narsaropet).<br>
-			<a class="float-right" href="about.html">Read More >></a>
-			</span>
-			</p>
-		  </div>
-		<!--/div-->
-	  </div>
-	  <div class="col-lg-6">
-		<div class="row no-gutters">
-		  <div class="col-sm-6">
-			<div class="card">
-			  <div class="card-header"><a href="latest_updates.html" style="color:navy">Latest Updates</a></div>
-			  <div class="card-body">
-				<marquee direction="up" height="100%" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
-				  <a href="latest_updates.html">
-					<img src="images/new.gif" width="30" height="14" border="0" alt=""/>
-					Plantation
-				  </a><br/>
-				  <a href="latest_updates.html">
-					<img src="images/new.gif" width="30" height="14" border="0" alt=""/>
-					Web development
-				  </a><br/>
-				  <a href="latest_updates.html">
-					<img src="images/new.gif" width="30" height="14" border="0" alt=""/>
-					Balasadan
-				  </a><br/>
-				  <a href="latest_updates.html">
-					<img src="images/new.gif" width="30" height="14" border="0" alt=""/>
-					Hostel construction
-				  </a>
-				</marquee>
-			  </div>
-			  <div class="card-footer">Updated On:17-JUL-2018</div>
+		
+		
+		<p>Villages are the backbone of INDIA.SAC believes that lack of information is the root cause for corruption. 
+		We are trying to educate the people in villages and create awareness in them.
+		As part of this program we adopted some villages and the respective schools in that locality.
+		As a part of it we the students of SAC conducted awareness program which consists of programs like
+		<ul>
+			<li>Telling their blood group</li>
+			<li>Conducting Science exhibition</li>
+			<li>Adverse effects of early Marriages</li>
+			<li>Programs related to the agriculture</li>
+			<li>Programs related to Superstitions</li>
+			<li>Alcohol and its effects</li>
+			<li>Health camps with the help of Government and</li>
+		</ul>
+		
+		<dl>
+			<dt>
+				Village Team:-
+			</dt>
+			<dd>
+				Since all the needy can’t be brought to one place so we distribute ourselves to the needy places and that is village team. For village team 10 members are allocated. It conducts monthly health checkup camps in villages to create awareness among villagers and takes care of health problems of children.
+				<br>
+				It has adopted 8 villages near Bapatla under village program where they educate children in school and villages regarding social evils like intoxication, child labour, child marriages and also says about the facilities that government provide for education…
+				<br>
+				The adopted villages by the team are:
+				<ul>
+					<li><a  href="#1">Maruproluvaripalem</a></li>
+					<li><a  href="#2">Vedulapalli</a></li>
+					<li>Asodivaripalem</li>
+					<li>Muthaipalem</li>
+					<li>Jammulapalem</li>
+					<li>Deaf and Dumb school(PCS)</li>
+					<li>Balasadan</li>
+					<li>Epurupalem</li>
+				</ul>
+			</dd>
+		</dl>
+		Our main aim is to achieve Ancient Glory to our villages and 100% literacy among the people in villages.
+		</p>
+		
+		<h1 class="display-6" id="1">Maruproluvaripalem</h1>
+			<div class="row no-gutters">
+				<div class="col-md-8">
+					<p><span class="align-middle">
+					In order to help people in emergency SAC members collected a data base of about 700 students in the college which consists of their blood groups and contact numbers. Contact numbers of SAC members are given in various hospitals and medical shops nearby. In case of any call from needy the SAC members pass on the information to various students of the respective blood group to render their help.
+					<br>
+					<a class="float-right" href="maruproluvaripalem.html">Read More >></a>
+					</span></p>
+				</div>
+				<div class="col-md-4">
+					<center><img src="images/img1.png" class="img-fluid" alt="Responsive image"></center>
+				</div>
 			</div>
-		  </div>
-		  <div class="col-sm-6">
-			<div class="card">
-			  <div class="card-header"> <a href="upcoming_events.html" style="color:navy;">Upcoming Events</a></div>
-			  <div class="card-body">
-				<marquee direction="up" height="100%" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
-				  <a href="upcoming_events.html">
-					<img src="images/new.gif" width="30" height="14" border="0" alt=""/>
-					Hostel Opening
-				  </a><br/>
-				  <a href="upcoming_events.html">
-					<img src="images/new.gif" width="30" height="14" border="0" alt=""/>
-					Madical Camp
-				  </a><br/>
-				  <a href="upcoming_events.html">
-					<img src="images/new.gif" width="30" height="14" border="0" alt=""/>
-					2K and 5K Run
-				  </a><br/>
-				  <a href="upcoming_events.html">
-					<img src="images/new.gif" width="30" height="14" border="0" alt=""/>
-					Hostel Opening
-				  </a>
-				</marquee>
-			  </div>
-			  <div class="card-footer">Updated On:17-JUL-2018</div>
+			
+		<h1 class="display-6" id="2">Vedulapalli</h1>
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<center><img src="images/img2.png" class="img-fluid" alt="Responsive image"></center>
+				</div>
+				<div class="col-md-8">
+					<p><span class="align-middle">
+					We have observed the people through the medical camps and found that they were unaware of education and discipline.
+					<br>
+					So,we are conducting tuitions in this village to help the poor children in their education.
+					<br>
+					<a class="float-right" href="#">Read More >></a>
+					</span></p>
+				</div>
 			</div>
-		  </div>
-		</div>
-	  </div>
-	  
+		
 	</div>
-
 	<footer>
 	  <br>
 	  <a href="tel:+91-964-048-0000"><img src="images/phone.png" height="40px"></a>
